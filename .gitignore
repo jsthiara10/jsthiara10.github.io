@@ -1,0 +1,6 @@
+_site/
+*.log
+*.xml
+.DS_Store
+
+.idea/
