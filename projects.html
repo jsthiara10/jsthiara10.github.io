@@ -39,6 +39,31 @@
       margin-top: 0.5rem;
     }
 
+    .skills-used {
+      margin-top: 0.5rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .skill-icon {
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    /* Simple Python Icon (snake) */
+    .python-icon svg {
+      fill: #306998;
+    }
+
+    /* Simple Cloud Icon for GCP */
+    .gcp-icon svg {
+      fill: #4285F4;
+    }
+
     a.back {
       display: inline-block;
       margin-top: 2rem;
@@ -51,8 +76,35 @@
   <h1>Projects</h1>
 
   <div class="project">
-    <h2><a href="https://github.com/jsthiara10/NYC_Airbnb_Pipeline" target="_blank">NYC Airbnb Pipeline</a></h2>
+    <h2><a href="https://github.com/jsthiara10/NYC_Airbnb_Pipeline" target="_blank" rel="noopener noreferrer">NYC Airbnb Pipeline</a></h2>
     <p>ETL pipeline that processes 50,000+ rows of Airbnb data using Pandas and Regex for cleaning, built for analytics-ready datasets.</p>
+    <div class="skills-used">
+      Skills used:
+      <span class="skill-icon python-icon" title="Python">
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+          <path d="M12 2c-3.866 0-7 3.134-7 7v6c0 3.866 3.134 7 7 7s7-3.134 7-7v-6c0-3.866-3.134-7-7-7zM9.5 6.5a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm2 10a1.5 1.5 0 1 1-2 0v-1h2v1z"/>
+        </svg>
+      </span>
+    </div>
+  </div>
+
+  <div class="project">
+    <h2><a href="https://github.com/jsthiara10/Cloud-Airbnb-Pipeline" target="_blank" rel="noopener noreferrer">Cloud Airbnb Pipeline</a></h2>
+    <p>GCP-based version of the Airbnb ETL pipeline, leveraging cloud services for scalable data processing and orchestration.</p>
+    <div class="skills-used">
+      Skills used:
+      <span class="skill-icon python-icon" title="Python">
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+          <path d="M12 2c-3.866 0-7 3.134-7 7v6c0 3.866 3.134 7 7 7s7-3.134 7-7v-6c0-3.866-3.134-7-7-7zM9.5 6.5a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm2 10a1.5 1.5 0 1 1-2 0v-1h2v1z"/>
+        </svg>
+      </span>
+      <span class="skill-icon gcp-icon" title="Google Cloud Platform (GCP)">
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+          <circle cx="12" cy="12" r="10" />
+          <path d="M6 16l12-8" stroke="#fff" stroke-width="2" />
+        </svg>
+      </span>
+    </div>
   </div>
 
   <a class="back" href="index.html">← Back to homepage</a>
