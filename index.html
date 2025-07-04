@@ -5,77 +5,108 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jasraj Singh Thiara | Data Engineer</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: #111827;
+      background: #000000;
       color: #F9FAFB;
-      line-height: 1.6;
+      display: flex;
     }
 
-    header {
-      background: #1F2937;
-      padding: 2rem;
+    aside {
+      background-color: #111;
+      width: 250px;
+      min-height: 100vh;
+      padding: 2rem 1rem;
       text-align: center;
+      border-right: 1px solid #222;
     }
 
-    h1 {
-      margin: 0;
-      font-size: 2.5rem;
-      color: #3B82F6;
+    aside img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
     }
 
-    p.tagline {
-      font-size: 1.2rem;
+    aside h2 {
+      margin: 0.5rem 0 0.2rem;
+      color: #FBBF24;
+    }
+
+    aside p {
       color: #9CA3AF;
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .social-icons a {
+      margin: 0 0.5rem;
+      display: inline-block;
+      color: #3B82F6;
+      font-size: 1.5rem;
+      text-decoration: none;
     }
 
     main {
-      max-width: 800px;
-      margin: auto;
+      flex: 1;
       padding: 2rem;
+      max-width: 800px;
     }
 
     section {
       margin-bottom: 3rem;
     }
 
-    h2 {
+    h1, h2 {
       color: #FCD34D;
-      border-bottom: 2px solid #374151;
-      padding-bottom: 0.5rem;
     }
 
-    .project, .post {
-      background: #1F2937;
-      padding: 1rem;
-      border-radius: 0.5rem;
-      margin-top: 1rem;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    h1 {
+      font-size: 2.2rem;
     }
 
-    a {
+    h3 a {
       color: #3B82F6;
       text-decoration: none;
     }
 
-    a:hover {
+    h3 a:hover {
       text-decoration: underline;
     }
 
+    .project, .post {
+      background: #111827;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      margin-top: 1rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+
     footer {
-      text-align: center;
-      padding: 2rem;
+      margin-top: 2rem;
       font-size: 0.9rem;
       color: #6B7280;
     }
   </style>
+  <!-- Font Awesome CDN for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
-    <h1>Jasraj Singh Thiara</h1>
-    <p class="tagline">Data Engineer • ETL/ELT • Cloud Native</p>
-  </header>
+  <aside>
+    <img src="your-photo.jpg" alt="Jasraj Singh Thiara" />
+    <h2>Jasraj Singh Thiara</h2>
+    <p>Data Engineer • ETL/ELT • Cloud Native</p>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/your-profile" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/your-username" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </aside>
 
   <main>
     <section>
@@ -84,7 +115,6 @@
         <h3><a href="https://github.com/jsthiara10/NYC_Airbnb_Pipeline">NYC Airbnb Pipeline</a></h3>
         <p>ETL pipeline that cleans 50,000 rows of Airbnb listing data, using Python's Pandas and Regex modules.</p>
       </div>
-      <!-- Duplicate .project for more -->
     </section>
 
     <section>
@@ -93,12 +123,11 @@
         <h3><a href="#">Why Data Engineering Needs Storytelling</a></h3>
         <p>Sharing insights on how translating data into narratives is key to impact.</p>
       </div>
-      <!-- Duplicate .post for more -->
     </section>
-  </main>
 
-  <footer>
-    &copy; 2025 Jasraj Singh Thiara • Built with HTML/CSS • <a href="https://github.com/jsthiara10">GitHub</a>
-  </footer>
+    <footer>
+      &copy; 2025 Jasraj Singh Thiara • Built with HTML/CSS • <a href="https://github.com/jsthiara10">GitHub</a>
+    </footer>
+  </main>
 </body>
 </html>
