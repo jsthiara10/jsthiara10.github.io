@@ -5,11 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About Me | Jasraj Singh Thiara</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
       background: #ffffff;
-      color: #111;
+      color: #111111;
       display: flex;
       min-height: 100vh;
     }
@@ -49,18 +53,45 @@
     main {
       flex: 1;
       padding: 3rem;
-      max-width: 800px;
-      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      text-align: center;
     }
 
-    h2 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
+    .title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 3rem;
     }
 
-    p {
-      line-height: 1.6;
-      font-size: 1rem;
+    .nav-buttons {
+      display: flex;
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .nav-buttons a {
+      padding: 1rem 2rem;
+      border-radius: 100px;
+      border: 2px solid #111;
+      text-decoration: none;
+      color: #111;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+
+    .nav-buttons a:hover {
+      background: #111;
+      color: white;
+    }
+
+    p.about-text {
+      max-width: 600px;
+      line-height: 1.5;
+      font-size: 1.1rem;
+      color: #333;
     }
   </style>
 </head>
@@ -70,26 +101,31 @@
     <h1>Jasraj Singh Thiara</h1>
     <p>Data Engineer • ETL/ELT • Cloud Native</p>
     <div class="icons">
-      <a href="https://github.com/jsthiara10" target="_blank">
+      <a href="https://github.com/jsthiara10" target="_blank" rel="noopener">
         <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" width="24" alt="GitHub">
       </a>
-      <a href="https://www.linkedin.com/in/jasrajsinghthiara/" target="_blank">
+      <a href="https://www.linkedin.com/in/jasrajsinghthiara/" target="_blank" rel="noopener">
         <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" width="24" alt="LinkedIn">
       </a>
     </div>
   </aside>
 
   <main>
-    <h2>About Me</h2>
-    <p>
-      I'm Jasraj Singh Thiara — a data engineer with a focus on ETL/ELT, cloud-native solutions, and end-to-end data pipelines.
-      I most recently worked at one of the UK's leading financial services companies, building scalable data pipelines and migrating legacy systems onto the Cloud
-    </p>
-    <p>
-     My skills include Python, SQL and Google Cloud Platform
-    </p>
-    <p>
-      Outside of my work, I'm a regular gym-goer and have recently trained in Muay Thai
+    <div class="title">About Me</div>
+
+    <div class="nav-buttons">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+    </div>
+
+    <p class="about-text">
+
+      I'm Jasraj Singh Thiara — a data engineer with a focus on ETL/ELT, cloud-native solutions, and end-to-end data pipelines. I most recently worked at one of the UK's leading financial services companies, building scalable data pipelines and migrating legacy systems onto the Cloud
+
+      My skills include Python, SQL and Google Cloud Platform
+
+      Outside my work, I'm a regular gym-goer and have recently trained in Muay Thai
+
     </p>
   </main>
 </body>
